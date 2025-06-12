@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+/* For Webkit browsers (Chrome, Safari) */
+html, body {
+    overflow: -moz-scrollbars-none;  /* For Firefox (Legacy) */
+    -ms-overflow-style: none;        /* For IE and Edge */
+    scrollbar-width: none;           /* For Firefox (Modern) */
+  }
+  
+  /* Hide scrollbar for Webkit browsers */
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  :root {
+    --primary-color:#1ce480;
+    --secondary-color: #d0f7e2;
+    --accent-color: #1ce480;
+    --text-color: white;
+    --button-border: rgba(69, 236, 39, 0.5);
+  }
+  
+  

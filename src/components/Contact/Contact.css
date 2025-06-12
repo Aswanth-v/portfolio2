@@ -1,0 +1,66 @@
+.Contact-container {
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+    display: flex;
+    flex-direction:column; 
+    align-items: center;
+    justify-content: center;
+       font-family: Poppins, Roboto, sans-serif;
+}
+
+.contact-head{
+    color:var(--primary-color);
+}
+
+.contact-para{
+    color:var(--text-color);
+    max-width:60%;
+    padding-top:30px;
+    margin-left:20%;
+    line-height:1.2rem;
+    font-family: Poppins, Roboto, sans-serif;
+    font-size:18px;
+}
+
+.contact-bt {
+    padding-top:5%;
+  
+}
+.contact-bt button {
+    position: relative;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: 2px solid var(--primary-color); /* Border for better visibility */
+    background-color: transparent; /* Transparent background */
+    color:white; /* Primary color for text */
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden; /* Ensures the curtain effect stays inside */
+    transition: color 0.4s, border-color 0.4s; /* Smooth transition for text and border */
+    z-index: 1; /* Ensure button text is above the curtain */
+}
+
+.contact-bt button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color); /* Primary color for the curtain */
+    transition: left 0.3s ease-in-out;
+    z-index: -1; /* Ensures the curtain is behind the button text */
+}
+
+.contact-bt button:hover::before {
+    left: 0;
+}
+
+.contact-bt button:hover {
+    color: black; /* Changes text color when hovered */
+    border-color: transparent; /* Darker border on hover */
+}
+
+#Contact {
+    min-height: 100vh; /* Ensure the Contact section has enough height to make scrolling noticeable */
+  }

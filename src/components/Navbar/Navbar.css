@@ -1,0 +1,255 @@
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  transform: translate(-30%, -50%);
+  text-align: left;
+  color: white;
+  font-family: Roboto Mono;
+}
+
+.overlay-text p {
+  font-size: 1.3rem;
+  margin: 0 0 5px;
+}
+
+.overlay-text h1 {
+  font-size: 4rem;
+  margin: 10px 0;
+}
+
+.typewriter-effect {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-family: 'Georgia', serif;
+  margin: 0;
+}
+
+.animated-text {
+  font-weight: bold;
+  color:var(--primary-color);
+  font-size: 2rem;
+}
+
+.button {
+  margin: 6px 0;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 2px solid rgba(69, 236, 39, 0.5);
+  background: transparent;
+  color:var(--primary-color);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.button:hover {
+  border-color:var(--primary-color);
+}
+
+.but-div {
+  padding-top: 20px;
+}
+
+  .chat {
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    text-align: left;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: oblique;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-align: center;
+
+
+  
+}
+
+.chat:hover {
+  color:var(--primary-color);
+}
+
+.chat::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 2px;
+  background-color:var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.chat:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.social-icon {
+  position:absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px; /* Space between icons */
+}
+
+.icon1, .icon2, .icon3, .icon4 {
+  font-size: 40px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.icon1:hover{
+  color: #6cc644;  /* Change color on hover */
+}
+
+.icon2:hover{
+  color: #0077b5;  /* Change color on hover */
+}
+
+.icon3:hover{
+  color:#962fbf ;
+}
+
+.icon4:hover{
+  color:#25d366 ;
+}
+
+
+@media (max-width: 1231px) {
+  .overlay-text {
+    left: 10%;
+    top: 45%;
+    transform: translate(-10%, -45%);
+    text-align: center;
+  }
+
+  .overlay-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .overlay-text p {
+    font-size: 1rem;
+  }
+
+  .animated-text {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .chat {
+    font-size: 1rem;
+ 
+    
+  }
+
+  .social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text {
+    left: 5%;
+    top: 40%;
+    transform: translate(-5%, -40%);
+  }
+
+  .overlay-text h1 {
+    font-size: 2rem;
+  }
+
+  .overlay-text p {
+    font-size: 0.9rem;
+  }
+
+  .animated-text {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 6px;
+  }
+
+  .chat {
+    font-size: 0.9rem;
+ 
+    padding:30px;
+  }
+
+  .social-icon {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.icon1 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.icon2 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 30px; /* Add more gap by increasing bottom */
+    right: 0px;
+}
+
+.icon3 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 60px; /* Increase bottom to create more gap */
+    right: 0px;
+}
+
+.icon4 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 90px; /* Further increase bottom to add more gap */
+    right: 0px;
+}
+}
