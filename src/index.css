@@ -15,7 +15,8 @@
 html, body {
     overflow: -moz-scrollbars-none;  /* For Firefox (Legacy) */
     -ms-overflow-style: none;        /* For IE and Edge */
-    scrollbar-width: none;           /* For Firefox (Modern) */
+    scrollbar-width: none;
+    background:black;           /* For Firefox (Modern) */
   }
   
   /* Hide scrollbar for Webkit browsers */

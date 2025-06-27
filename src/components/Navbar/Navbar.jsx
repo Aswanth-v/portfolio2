@@ -21,7 +21,6 @@ const Navbar = () => {
   return (
     <>
       <div className='background'>
-        <video src={videobg} autoPlay loop muted playsInline />
         <div className="overlay-text">
           <p style={{ color: "#1ce480", fontFamily: "Georgia" }}>Hi! &nbsp;I am</p>
           <h1>Aswanth.v</h1>
@@ -30,7 +29,15 @@ const Navbar = () => {
       <Cursor cursorColor="#1ce480" />
     </p>
           <div className='but-div'>
-          <button className='button'>About Me</button>
+       <button
+  className="button"
+  onClick={() =>
+    window.open("https://linkedin.com/in/aswanth-v", "_blank", "noopener,noreferrer")
+  }
+>
+  About Me
+</button>
+
           </div>
         </div>
         
@@ -43,19 +50,19 @@ const Navbar = () => {
        
         <div className='social-icon'>
           
-        <a href="https://github.com/aswanth" target="_blank" rel="noopener noreferrer" className='icon1'>
+        <a href="https://github.com/aswanth-v" target="_blank" rel="noopener noreferrer" className='icon1'>
                 <FontAwesomeIcon icon={faGithub} /> 
             </a>
             
-            <a href="https://linkedin.com/in/aswanth" target="_blank" rel="noopener noreferrer" className='icon2'>
+            <a href="https://linkedin.com/in/aswanth-v" target="_blank" rel="noopener noreferrer" className='icon2'>
                 <FontAwesomeIcon icon={faLinkedin} /> 
             </a>
 
-            <a href= "" target="_blank" rel="noopener noreferrer" className='icon3'>
+            <a href= "https://instagram.com/_aswa_v" target="_blank" rel="noopener noreferrer" className='icon3'>
             <FontAwesomeIcon icon={faInstagram}/>
             </a>
 
-            <a href= "" target="_blank" rel="noopener noreferrer" className='icon4'>
+            <a href= "https://wa.me/7736212900" target="_blank" rel="noopener noreferrer" className='icon4'>
             <FontAwesomeIcon icon={faWhatsapp}/>
             </a>
           </div>

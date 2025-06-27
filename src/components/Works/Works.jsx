@@ -64,6 +64,22 @@ function Works() {
 
         </div>
       </div>
+      <div
+        ref={(el) => (tiltRefs.current[1] = el)}
+        className="tittle-card"
+      >
+        <div className='shoping'>
+        <h2 className='shop'>Netflix-clone
+         &nbsp; 
+         <FontAwesomeIcon icon={faTicketAlt} />
+
+         </h2>
+       
+        <p className='shop-para'>A ShoppingCart,built with Node.js and Express.js, lets users browse products, add items to their cart, and check out easily.It manages user sessions, updates carts in real-time.MongoDB handles the data, making the app fast and reliable for e-commerce needs.It integrates Razorpay for secure and hassle-free payments, ensuring smooth transactions.</p>
+        <a href="https://github.com/Aswanth-v/Netflix_clone" target="_blank" rel="noopener noreferrer" className='sorce'>Source</a>
+
+        </div>
+      </div>
    
       </div>
     

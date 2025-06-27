@@ -29,23 +29,23 @@ function Hero({who}) {
         </div>
 
       
-      <div className='hero-icon'>
-         <a href="https://github.com/aswanth" target="_blank" rel="noopener noreferrer" className='icon1'>
-                        <FontAwesomeIcon icon={faGithub} /> 
-                    </a>
-                    
-                    <a href="https://linkedin.com/in/aswanth" target="_blank" rel="noopener noreferrer" className='icon2'>
-                        <FontAwesomeIcon icon={faLinkedin} /> 
-                    </a>
-        
-                    <a href= "https://t.me/LUCIFER" target="_blank" rel="noopener noreferrer" className='icon3'>
-                    <FontAwesomeIcon icon={faTelegram}/>
-                    </a>
-        
-                    <a href= "https://twitter.com/aswanth962072" target="_blank" rel="noopener noreferrer" className='icon4'>
-                    <FontAwesomeIcon icon={faX}/>
-                    </a>
-      </div>
+    <div className="hero-icon">
+  <a href="https://github.com/aswanth-v" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faGithub} />
+  </a>
+
+  <a href="https://linkedin.com/in/aswanth-v" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faLinkedin} />
+  </a>
+
+  <a href="https://t.me/LUCIFER" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faTelegram} />
+  </a>
+
+  <a href="https://twitter.com/aswanth962072" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faX} />
+  </a>
+</div>
 
 
       </div>

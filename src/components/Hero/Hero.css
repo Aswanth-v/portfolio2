@@ -2,13 +2,14 @@
   height: 90vh; /* Full viewport height */
   display: flex;
   flex-direction: row; /* Default row direction */
-  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(17, 17, 17));
+
   top: 50%;
   left: 20%;
   padding: 5%;
   font-family: Poppins, Roboto, sans-serif;
   line-height:1.2rem;
   z-index: 0; /* Ensure it doesn't cover children */
+  
 }
 
 .para {
@@ -16,6 +17,7 @@
   display: inline-block;
   position: relative;
   padding-bottom: 5px; /* Space between text and underline */
+  
 }
 
 .para::after {
@@ -40,6 +42,7 @@
   line-height: 1.3rem;
   order: 1;
   padding-top:5%;
+   word-spacing: 5px;
 }
 .amigo {
   padding-top: 8%;
@@ -67,16 +70,25 @@
 }
 
 
-.hero-icon{
-  position:relative;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: end;
-  gap: 10px;
-  padding-top:20%;
-  gap:5%;
+.hero-icon a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem; /* Important for square shape */
+  background: transparent;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  color: var(--primary-color);
+  margin: 3rem 1.5rem 3em 0;
+  transition: 0.3s ease-in-out;
+}
+
+.hero-icon a:hover {
+  color: var(--text-color);
+  transform: scale(1.3) translateY(-5px);
+  box-shadow: 0 0 25px var(--button-border);
+  background-color: var(--button-border);
 }
 
 
@@ -104,19 +116,26 @@
     padding: 20px; /* Optional: add some padding for better spacing */
   }
 
-  .hero-textsphere {
-   margin-left:13.9%;
+   .hero-textsphere {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    height: 220px; /* Reduced from 300px */
+    width: 220px;  /* Reduced from 270px */
     display: flex;
-  align-items: center; /* Aligns vertically in the center of the flex container */
-  justify-content: center;
-    margin-top: 10px; /* Ensure the tag cloud doesn't stick to the text */
-    height: 300px; /* Adjust size for smaller screens */
-    width: 270px; /* Adjust size for smaller screens */
-
-    order: 2; /* Position it below the "Who I Am" section */
+    align-items: center;
+    justify-content: center;
+    order: 2;
   }
   .amigo{
     font-size:15px;
     left:-20%;
+  }
+}
+@media (max-width: 360px) {
+  .hero-textsphere {
+    width: 180px;
+    height: 180px;
+    margin: 15px auto 0;
   }
 }
