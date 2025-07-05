@@ -65,7 +65,7 @@ function Works() {
         </div>
       </div>
       <div
-        ref={(el) => (tiltRefs.current[1] = el)}
+        ref={(el) => (tiltRefs.current[2] = el)}
         className="tittle-card"
       >
         <div className='shoping'>
