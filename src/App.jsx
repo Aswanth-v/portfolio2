@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Hero from './components/Hero/Hero.jsx'
 import './index.css';
-import Works from './components/works/Works.jsx';
+import Works from './components/Works/Works.jsx'
 import Contact  from './components/Contact/Contact.jsx';
 
 
