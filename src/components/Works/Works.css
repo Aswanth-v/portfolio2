@@ -38,20 +38,22 @@
 }
 
 .tittle-card {
-  width: 100%;                        /* NEW */
-  max-width: 400px;                   /* NEW */
-  height: auto;                       /* NEW */
+  width: 100%;
+  max-width: 400px;                 /* Slightly smaller fixed card size */
+  height: 350px;                    /* Set a fixed height */
   background: rgba(80, 185, 204, 0.25);
-  margin: auto;                       /* NEW */
+  margin: auto;
   border: 1px solid rgba(6, 80, 22, 0.18);
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(217, 238, 205, 0.1);
   transition: transform 0.3s ease;
-  display:flex;
-  flex-direction: column;            /* NEW */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 20px;                     /* NEW */
+  padding: 20px;
+  overflow: hidden;                /* Prevent overflow */
 }
+
 
 .shop{
   color:var(--text-color);
@@ -91,6 +93,11 @@
 
 .sorce:hover::after {
   width: 20%; /* Expands fully under the text */
+}
+
+.live {
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -173,4 +180,5 @@
 
 .OG-work{
   color:var(--primary-color);
+ 
 }
