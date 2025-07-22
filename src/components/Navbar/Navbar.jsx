@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 
-import videobg from "../../assets/portvido.mp4";
+
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
