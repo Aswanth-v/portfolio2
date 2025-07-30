@@ -15,7 +15,7 @@ const Navbar = () => {
 
   // 🔽 Resume download function
   const handleDownloadResume = () => {
-    const resumeUrl = '/resources/Aswanth_Resume.pdf';
+    const resumeUrl = '/recorces/Aswanth_Resume.pdf';
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'Aswanth_Resume.pdf';
