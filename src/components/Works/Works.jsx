@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons"; // Correct icon import
 import { faTicketAlt } from "@fortawesome/free-solid-svg-icons";
 import { faThumbsUp } from "@fortawesome/free-regular-svg-icons";
-
+import { faNoteSticky } from "@fortawesome/free-solid-svg-icons";
+import { faFaceLaughBeam } from "@fortawesome/free-solid-svg-icons";
 function Works() {
   const tiltRefs = useRef([]);
 
@@ -64,9 +65,10 @@ function Works() {
               Fragrenzo is a full-stack e-commerce website for premium perfumes,
               built using the MERN stack. It features user authentication,
               product filtering, and secure payments via Razorpay. Admins can
-              manage products and orders, while users can browse and place
-              orders easily. Cloudinary is used for product image uploads, and
-              Redux Toolkit manages the app state.
+              manage products and orders, while users can easily browse and
+              place orders. Cloudinary handles product image uploads, and Redux
+              Toolkit manages the application state. The UI is built with ShadCN
+              components, ensuring a modern and consistent design system.
             </p>
             <div className="live">
               <a
@@ -113,17 +115,19 @@ function Works() {
           </div>
         </div>
 
-
-
         <div ref={(el) => (tiltRefs.current[3] = el)} className="tittle-card">
           <div className="shoping">
             <h2 className="shop">
-              Shopping cart  &nbsp;
+              Shopping cart &nbsp;
               <FontAwesomeIcon icon={faShoppingCart} />
             </h2>
 
             <p className="shop-para">
-            This is a shopping cart web application built using Node.js, Express.js, MongoDB, and Handlebars (HBS). It offers core e-commerce features like product listing, cart management, and order placement, all rendered server-side for a smooth and functional user experience.
+              This is a shopping cart web application built using Node.js,
+              Express.js, MongoDB, and Handlebars (HBS). It offers core
+              e-commerce features like product listing, cart management, and
+              order placement, all rendered server-side for a smooth and
+              functional user experience.
             </p>
             <a
               href="https://github.com/Aswanth-v/shopping-cart"
@@ -135,6 +139,40 @@ function Works() {
             </a>
           </div>
         </div>
+
+         <div ref={(el) => (tiltRefs.current[4] = el)} className="tittle-card">
+          <div className="shoping">
+            <h2 className="shop">
+              VibeScapes &nbsp;
+              <FontAwesomeIcon icon={faFaceLaughBeam} />
+            </h2>
+
+            <p className="shop-para">
+              VibeScape is a fun and interactive mood-based app built with React. Users can select and describe their mood, and the app responds by showing a random meme that matches the vibe — turning emotions into laughs instantly..
+            </p>
+            <div className="live">
+             <a
+              href="https://github.com/Aswanth-v/vibescapes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="sorce"
+            >
+              Source
+            </a>
+
+             <a
+                href="https://vibescapes.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sorce"
+              >
+                Live
+              </a>
+           </div>
+          </div>
+        </div>
+
+       
       </div>
     </div>
   );

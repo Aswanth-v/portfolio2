@@ -1,14 +1,9 @@
 import React from 'react';
 import './Navbar.css';
 
-
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
-
-
 
 const Navbar = () => {
   const [text] = useTypewriter({
@@ -20,59 +15,53 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='background'>
+      <div className="background">
         <div className="overlay-text">
           <p style={{ color: "#1ce480", fontFamily: "Georgia" }}>Hi! &nbsp;I am</p>
           <h1>Aswanth.v</h1>
-           <p className="typewriter-effect">
-      I'm &nbsp;<span className="animated-text">{text}</span>
-      <Cursor cursorColor="#1ce480" />
-    </p>
-          <div className='but-div'>
-       <button
-  className="button"
-  onClick={() =>
-    window.open("https://linkedin.com/in/aswanth-v", "_blank", "noopener,noreferrer")
-  }
->
-  About Me
-</button>
+          <p className="typewriter-effect">
+            I'm &nbsp;<span className="animated-text">{text}</span>
+            <Cursor cursorColor="#1ce480" />
+          </p>
 
+          <div className="but-div">
+            <button
+              className="button"
+              onClick={() =>
+                window.open("https://linkedin.com/in/aswanth-v", "_blank", "noopener,noreferrer")
+              }
+            >
+              About Me
+            </button>
           </div>
         </div>
-        
+
         <div>
-        <a href="mailto:aswanthvthalora140905@gmail.com">
-        <h2 className='chat'>Let's Chat</h2>
+          <a href="mailto:aswanthvthalora140905@gmail.com">
+            <h2 className="chat">Let's Chat</h2>
           </a>
-           
-          </div>
-       
-        <div className='social-icon'>
-          
-        <a href="https://github.com/aswanth-v" target="_blank" rel="noopener noreferrer" className='icon1'>
-                <FontAwesomeIcon icon={faGithub} /> 
-            </a>
-            
-            <a href="https://linkedin.com/in/aswanth-v" target="_blank" rel="noopener noreferrer" className='icon2'>
-                <FontAwesomeIcon icon={faLinkedin} /> 
-            </a>
-
-            <a href= "https://instagram.com/_aswa_v" target="_blank" rel="noopener noreferrer" className='icon3'>
-            <FontAwesomeIcon icon={faInstagram}/>
-            </a>
-
-            <a href= "https://wa.me/7736212900" target="_blank" rel="noopener noreferrer" className='icon4'>
-            <FontAwesomeIcon icon={faWhatsapp}/>
-            </a>
-          </div>
         </div>
-      
+
+        <div className="social-icon">
+          <a href="https://github.com/aswanth-v" target="_blank" rel="noopener noreferrer" className="icon1">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+
+          <a href="https://linkedin.com/in/aswanth-v" target="_blank" rel="noopener noreferrer" className="icon2">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+
+          <a href="https://instagram.com/_aswa_v" target="_blank" rel="noopener noreferrer" className="icon3">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+
+          <a href="https://wa.me/7736212900" target="_blank" rel="noopener noreferrer" className="icon4">
+            <FontAwesomeIcon icon={faWhatsapp} />
+          </a>
+        </div>
+      </div>
     </>
-   
-    
   );
 };
 
 export default Navbar;
-
