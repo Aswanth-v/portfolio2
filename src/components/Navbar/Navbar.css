@@ -146,6 +146,26 @@ h2 {
 .icon4:hover{
   color:#25d366 ;
 }
+.resume-button {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 9999;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid #1ce480;
+  background: transparent;
+  color: #1ce480;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #1ce480;
+  color: #fff;
+}
 
 
 @media (max-width: 1231px) {
