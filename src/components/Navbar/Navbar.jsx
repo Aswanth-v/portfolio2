@@ -13,6 +13,15 @@ const Navbar = () => {
     deleteSpeed: 50,
   });
 
+  // 🔽 Resume download function
+  const handleDownloadResume = () => {
+    const resumeUrl = '/resources/Aswanth_Resume.pdf';
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Aswanth_Resume.pdf';
+    link.click();
+  };
+
   return (
     <>
       <div className="background">
@@ -32,6 +41,11 @@ const Navbar = () => {
               }
             >
               About Me
+            </button>
+
+            {/* 🔽 Resume Download Button */}
+            <button className="button" onClick={handleDownloadResume}>
+              Download Resume
             </button>
           </div>
         </div>
