@@ -28,7 +28,7 @@ const Navbar = () => {
 
         {/* Resume Download Button */}
         <button className="resume-button" onClick={handleDownloadResume}>
-          Download Resume
+           Resume
         </button>
 
         <div className="overlay-text">
