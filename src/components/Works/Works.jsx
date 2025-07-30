@@ -172,7 +172,40 @@ function Works() {
           </div>
         </div>
 
-       
+        <div ref={(el) => (tiltRefs.current[5] = el)} className="tittle-card">
+          <div className="shoping">
+            <h2 className="shop">
+              NotePop &nbsp;
+              <FontAwesomeIcon icon={faNoteSticky} />
+            </h2>
+
+            <p className="shop-para">
+              NotePop is a simple and interactive sticky note app built using
+              HTML, CSS, and JavaScript. It allows users to add,update, and
+              delete notes on the screen — making it perfect for quick thoughts,
+              reminders, or planning. With a clean UI and smooth interactions,{" "}
+            </p>
+           <div className="live">
+             <a
+              href="https://github.com/Aswanth-v/NotePop"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="sorce"
+            >
+              Source
+            </a>
+
+             <a
+                href="https://notepop.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sorce"
+              >
+                Live
+              </a>
+           </div>
+          </div>
+        </div>
       </div>
     </div>
   );
