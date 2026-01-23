@@ -7,6 +7,7 @@ import { faTicketAlt } from "@fortawesome/free-solid-svg-icons";
 import { faThumbsUp } from "@fortawesome/free-regular-svg-icons";
 import { faNoteSticky } from "@fortawesome/free-solid-svg-icons";
 import { faFaceLaughBeam } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 function Works() {
   const tiltRefs = useRef([]);
 
@@ -140,7 +141,7 @@ function Works() {
           </div>
         </div>
 
-         <div ref={(el) => (tiltRefs.current[4] = el)} className="tittle-card">
+        <div ref={(el) => (tiltRefs.current[4] = el)} className="tittle-card">
           <div className="shoping">
             <h2 className="shop">
               VibeScapes &nbsp;
@@ -148,19 +149,22 @@ function Works() {
             </h2>
 
             <p className="shop-para">
-              VibeScape is a fun and interactive mood-based app built with React. Users can select and describe their mood, and the app responds by showing a random meme that matches the vibe — turning emotions into laughs instantly..
+              VibeScape is a fun and interactive mood-based app built with
+              React. Users can select and describe their mood, and the app
+              responds by showing a random meme that matches the vibe — turning
+              emotions into laughs instantly..
             </p>
             <div className="live">
-             <a
-              href="https://github.com/Aswanth-v/vibescapes"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="sorce"
-            >
-              Source
-            </a>
+              <a
+                href="https://github.com/Aswanth-v/vibescapes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sorce"
+              >
+                Source
+              </a>
 
-             <a
+              <a
                 href="https://vibescapes.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -168,7 +172,7 @@ function Works() {
               >
                 Live
               </a>
-           </div>
+            </div>
           </div>
         </div>
 
@@ -183,19 +187,20 @@ function Works() {
               NotePop is a simple and interactive sticky note app built using
               HTML, CSS, and JavaScript. It allows users to add,update, and
               delete notes on the screen — making it perfect for quick thoughts,
-              reminders, or planning. With a clean UI and smooth interactions,{" "}
+              reminders, or planning. With a clean UI and smooth
+              interactions,{" "}
             </p>
-           <div className="live">
-             <a
-              href="https://github.com/Aswanth-v/NotePop"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="sorce"
-            >
-              Source
-            </a>
+            <div className="live">
+              <a
+                href="https://github.com/Aswanth-v/NotePop"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sorce"
+              >
+                Source
+              </a>
 
-             <a
+              <a
                 href="https://notepop.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -203,7 +208,47 @@ function Works() {
               >
                 Live
               </a>
-           </div>
+            </div>
+          </div>
+        </div>
+
+        <div ref={(el) => (tiltRefs.current[6] = el)} className="tittle-card">
+          <div className="shoping">
+            <h2 className="shop">
+              CoadRoads &nbsp;
+              <FontAwesomeIcon icon={faCode} />
+            </h2>
+
+            <p className="shop-para">
+              CoadRoads is a web platform that provides structured learning
+              videos for developers, with publicly accessible content
+              available without login and exclusive content for authenticated
+              users. It includes user authentication, an admin interface to add,
+              edit, and delete exclusive roadmap content, and a favorites
+              feature managed using Redux. The platform also integrates an
+              AI-powered doubt clarification feature using the Hugging Face API,
+              allowing both users and admins to ask questions and receive
+              responses within the application.{" "}
+            </p>
+            <div className="live">
+              <a
+                href="https://github.com/Aswanth-v/DevRoadmap"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sorce"
+              >
+                Source
+              </a>
+
+              <a
+                href="https://coderoads.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sorce"
+              >
+                Live
+              </a>
+            </div>
           </div>
         </div>
       </div>
